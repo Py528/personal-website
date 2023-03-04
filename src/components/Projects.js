@@ -1,6 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
+import projImg1 from '../assets/img/project-img1.png';
+import projImg2 from '../assets/img/project-img2.png';
+import projImg3 from '../assets/img/project-img3.png';
 
 export const Projects = () => {
 	const projects = [
@@ -54,7 +57,8 @@ export const Projects = () => {
 						>
 							<Nav
 								variant="pills"
-								defaultActiveKey="/home"
+								className="nav-pills mb-5 justify-content-center align-items-center"
+                                id='pills-tab'
 							>
 								<Nav.Item>
 									<Nav.Link eventKey="first">Tab One</Nav.Link>
@@ -89,7 +93,7 @@ export const Projects = () => {
 			<img
 				className="background-image-right"
 				src={colorSharp2}
-			/>
+			></img>
 		</section>
 	);
 };
