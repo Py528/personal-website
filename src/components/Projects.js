@@ -58,7 +58,7 @@ export const Projects = () => {
 							<Nav
 								variant="pills"
 								className="nav-pills mb-5 justify-content-center align-items-center"
-                                id='pills-tab'
+								id="pills-tab"
 							>
 								<Nav.Item>
 									<Nav.Link eventKey="first">Tab One</Nav.Link>
@@ -83,8 +83,30 @@ export const Projects = () => {
 										})}
 									</Row>
 								</Tab.Pane>
-								<Tab.Pane eventKey="second">Lorem Ipsome</Tab.Pane>
-								<Tab.Pane eventKey="third">Lorem Ipsome</Tab.Pane>
+								<Tab.Pane eventKey="second">
+									<Row>
+										{projects.map((project, index) => {
+											return (
+												<ProjectCard
+													key={index}
+													{...project}
+												/>
+											);
+										})}
+									</Row>
+								</Tab.Pane>
+								<Tab.Pane eventKey="third">
+									<Row>
+										{projects.map((project, index) => {
+											return (
+												<ProjectCard
+													key={index}
+													{...project}
+												/>
+											);
+										})}
+									</Row>
+								</Tab.Pane>
 							</Tab.Content>
 						</Tab.Container>
 					</Col>
