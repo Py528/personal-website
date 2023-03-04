@@ -348,8 +348,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 	position: absolute;
 	bottom: 0;
 	width: 40%;
-	z-index: -4;
-}
+	z-index: -5;
+} 
 /*                                                        Skills Styling Ends                                            */
 
 .App {
