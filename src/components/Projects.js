@@ -1,5 +1,5 @@
-import { Container, TabContainer, TabContent, TabPane } from 'react-bootstrap';
-import { Container, Row, Col } from 'react-bootstrap';
+import { TabContainer, TabContent, TabPane } from 'react-bootstrap';
+import { Container, Row, Col, Tab } from 'react-bootstrap';
 
 export const Projects = () => {
 	const projects = [
