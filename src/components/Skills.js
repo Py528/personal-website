@@ -33,7 +33,7 @@ export const Skills = () => {
 			<Container>
 				<Row>
 					<Col>
-						<div className="skills-bx">
+						<div className="skill-bx">
 							<h2>Skills</h2>
 							<p>
 								again this is also just a bunch of nonsense that i am writing to improve my typing
