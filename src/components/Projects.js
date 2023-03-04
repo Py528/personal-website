@@ -1,5 +1,6 @@
-import { TabContainer, TabContent, TabPane } from 'react-bootstrap';
-import { Container, Row, Col, Tab } from 'react-bootstrap';
+import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
+import { ProjectCard } from './ProjectCard';
+import colorSharp2 from '../assets/img/color-sharp2.png';
 
 export const Projects = () => {
 	const projects = [
@@ -69,7 +70,12 @@ export const Projects = () => {
 								<Tab.Pane eventKey="first">
 									<Row>
 										{projects.map((project, index) => {
-											return <p>{project.title}</p>;
+											return (
+												<ProjectCard
+													key={index}
+													{...project}
+												/>
+											);
 										})}
 									</Row>
 								</Tab.Pane>
@@ -80,6 +86,10 @@ export const Projects = () => {
 					</Col>
 				</Row>
 			</Container>
+			<img
+				className="background-image-right"
+				src={colorSharp2}
+			/>
 		</section>
 	);
 };
